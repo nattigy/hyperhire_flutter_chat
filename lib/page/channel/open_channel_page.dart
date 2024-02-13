@@ -176,7 +176,7 @@ class OpenChannelPageState extends State<OpenChannelPage> {
                   SizedBox(
                     width: 200,
                     child: Card(
-                      color: Colors.grey.shade900,
+                      color: userId == (message.sender?.userId ?? 'x') ? Colors.pink : Colors.grey.shade900,
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Column(
